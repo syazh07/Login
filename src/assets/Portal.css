@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+#f {
+  max-width: 500px;
+  margin: 60px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+#f input[type="text"],
+#f input[type="email"],
+#f input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+#f p {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+#f #a {
+  width: 100%;
+  padding: 10px;
+  height: 80px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-size: 14px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+#s {
+  background-color: #4a90e2;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+#s:hover {
+  background-color: #357ab7;
+}
