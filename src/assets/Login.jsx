@@ -1,7 +1,9 @@
 
 import React, { useState } from 'react'
 import { Navigate, useNavigate } from 'react-router-dom';
-import "./Login.css";
+import "./Login.css"
+
+
 const Login = () => {
     const navigate =useNavigate();
     const [action,setAction]=useState("Login");
@@ -83,7 +85,7 @@ const Login = () => {
                 } 
                 else if (storedUser.role === "Recruiter") {
                 localStorage.setItem("recruiterCompany", storedUser.name);
-                navigate("/recruiter");
+                navigate("/post-job");
                 } 
                 else {
                 navigate("/");
@@ -102,7 +104,7 @@ const Login = () => {
 
                 <h1><u>{action}</u></h1>
                 {action ==="Sign Up"&&(
-                <div className="inputs">
+                <div className="input">
                     <input type ="text"  placeholder="Username" value={name} onChange={(e)=>setName(e.target.value)}/><br/>
                 </div>
                 )}
@@ -166,7 +168,7 @@ const Login = () => {
                 }
                </form>
             </div>
-
+            
         </div>
   )
 }
